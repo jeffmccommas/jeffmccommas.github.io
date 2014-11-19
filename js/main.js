@@ -35,10 +35,15 @@
      
      
    // script to off set main content from sticky header
-
+     var scrollTop     = $(window).scrollTop(),
+         elementOffset = $('.homesection').offset().top,
+         distance      = (elementOffset - scrollTop);
      $('.homesection').css({
-         marginTop: headerHeight +2
-     });
+         marginTop: distance +2
+
+     }); console.log(distance)
+
+
 
 
  }); // end ready function
