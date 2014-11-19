@@ -36,9 +36,9 @@
      
    // script to off set main content from sticky header
 
-     $('.homesection').css({
-         marginTop: headerHeight - 100
-     });
+//     $('.homesection').css({
+//         marginTop: headerHeight
+//     });
 
 
  }); // end ready function
