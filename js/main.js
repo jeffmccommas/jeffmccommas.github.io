@@ -24,7 +24,7 @@
                 target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
                 if (target.length) {
                     $('html,body').animate({
-                        scrollTop: target.offset().top - headerHeight + 100
+                        scrollTop: target.offset().top - headerHeight -5
                     }, 1000);
                     return false;
                 }
@@ -35,13 +35,13 @@
      
      
    // script to off set main content from sticky header
-     var scrollTop     = $(window).scrollTop(),
-         elementOffset = $('.homesection').offset().top,
-         distance      = (elementOffset - scrollTop);
-     $('.homesection').css({
-         marginTop: distance +2
-
-     }); console.log(distance)
+//     var scrollTop     = $(window).scrollTop(),
+//         elementOffset = $('.homesection').offset().top,
+//         distance      = (elementOffset - scrollTop);
+//     $('.homesection').css({
+//         marginTop: elementOffset +2
+//
+//     }); console.log(elementOffset)
 
 
 
