@@ -2,7 +2,10 @@
  * Created by jmccommas on 11/14/14.
  */
 
-
+// Free trial Button to open window
+$('#freeTrial').click(function(){
+    window.open('https://radiant-harbor-2865.herokuapp.com/home','_blank');
+});
 //**** Bootstrap Scrollspy and tooltip
  $(function () { // ready function
     $('body').scrollspy(
